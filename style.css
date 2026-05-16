@@ -362,3 +362,134 @@ footer a:hover {
         justify-content: center;
     }
 }
+
+/* ================= ERGÄNZUNGEN ================= */
+
+/* Hinweise und Platzhalter */
+.note {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.warning {
+    color: #e67e22;
+}
+
+.placeholder-card {
+    opacity: 0.7;
+    background-color: #fdfdfd;
+    border: 2px dashed #ccc;
+}
+
+.placeholder-card:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: #e67e22;
+}
+
+/* Skills Box im CV */
+.skills-box {
+    background: var(--light-blue);
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.skills-box h4 {
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+}
+
+.skills-box ul {
+    list-style-type: none;
+}
+
+.skills-box li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+/* Kontakt Grid */
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.contact-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px 30px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 400px;
+}
+
+.contact-box h3 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.contact-link {
+    color: var(--light-blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.contact-phone {
+    font-size: 1.3rem;
+    margin-top: 20px;
+}
+
+/* Impressum & Footer Update */
+.footer {
+    background: #001122;
+    color: #a0aab2;
+    padding: 50px 0 20px 0;
+    font-size: 0.95rem;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #1a2a3a;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.impressum h3, .firmendaten h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.footer p {
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+    .contact-grid, .footer-grid {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
